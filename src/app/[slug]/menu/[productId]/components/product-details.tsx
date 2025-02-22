@@ -40,10 +40,10 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
         setQuantity((prev) => prev + 1);
     };
     const handleAddToCart = () => {
-        // addProduct({
-        //     ...product,
-        //     quantity,
-        // });
+        addProduct({
+            ...product,
+            quantity,
+        });
         toggleCart();
     };
     return (
